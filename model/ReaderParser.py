@@ -1,7 +1,7 @@
 from xml import sax
 from xml.sax import handler
-from constants import fields
-from Sportsman import Sportsman
+from model.constants import fields
+from model.Sportsman import Sportsman
 
 class DataHandler(handler.ContentHandler):
     def __init__(self):
