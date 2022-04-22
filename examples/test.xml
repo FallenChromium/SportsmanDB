@@ -4,7 +4,7 @@
         <name>Зайцев Вадим Романович</name>
         <cast>N/A</cast>
         <position>19</position>
-        <title>12</title>
+        <titles>12</titles>
         <sport>Гимнастика</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -12,7 +12,7 @@
         <name>Карпов Богдан Владимирович</name>
         <cast>Запасной</cast>
         <position>71</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Вольная борьба</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -20,7 +20,7 @@
         <name>Смирнов Фёдор Романович</name>
         <cast>Запасной</cast>
         <position>37</position>
-        <title>10</title>
+        <titles>10</titles>
         <sport>Покер</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -28,7 +28,7 @@
         <name>Алексеева Аделина Вадимовна</name>
         <cast>Основной</cast>
         <position>72</position>
-        <title>18</title>
+        <titles>18</titles>
         <sport>Бадминтон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -36,7 +36,7 @@
         <name>Боброва Надежда Максимовна</name>
         <cast>Основной</cast>
         <position>6</position>
-        <title>15</title>
+        <titles>15</titles>
         <sport>Хоккей</sport>
         <rank>Кмс</rank>
     </row>
@@ -44,7 +44,7 @@
         <name>Беляева Алиса Мироновна</name>
         <cast>Основной</cast>
         <position>66</position>
-        <title>1</title>
+        <titles>1</titles>
         <sport>Футбол</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -52,7 +52,7 @@
         <name>Осипова Полина Макаровна</name>
         <cast>N/A</cast>
         <position>10</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Бокс</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -60,7 +60,7 @@
         <name>Казаков Иван Никитич</name>
         <cast>N/A</cast>
         <position>80</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Велоспорт</sport>
         <rank>Кмс</rank>
     </row>
@@ -68,7 +68,7 @@
         <name>Белкин Михаил Ярославович</name>
         <cast>N/A</cast>
         <position>71</position>
-        <title>0</title>
+        <titles>0</titles>
         <sport>Биатлон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -76,7 +76,7 @@
         <name>Николаев Марк Юрьевич</name>
         <cast>Основной</cast>
         <position>1</position>
-        <title>11</title>
+        <titles>11</titles>
         <sport>Гимнастика</sport>
         <rank>Кмс</rank>
     </row>
@@ -84,7 +84,7 @@
         <name>Зверев Тимофей Ярославович</name>
         <cast>N/A</cast>
         <position>37</position>
-        <title>5</title>
+        <titles>5</titles>
         <sport>Гимнастика</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -92,7 +92,7 @@
         <name>Фролова Ксения Гордеевна</name>
         <cast>Основной</cast>
         <position>76</position>
-        <title>16</title>
+        <titles>16</titles>
         <sport>Бадминтон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -100,7 +100,7 @@
         <name>Фролов Владислав Александрович</name>
         <cast>N/A</cast>
         <position>28</position>
-        <title>16</title>
+        <titles>16</titles>
         <sport>Шахматы</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -108,7 +108,7 @@
         <name>Иванов Пётр Адамович</name>
         <cast>N/A</cast>
         <position>43</position>
-        <title>2</title>
+        <titles>2</titles>
         <sport>Хоккей</sport>
         <rank>Кмс</rank>
     </row>
@@ -116,7 +116,7 @@
         <name>Давыдова Диана Дмитриевна</name>
         <cast>N/A</cast>
         <position>36</position>
-        <title>5</title>
+        <titles>5</titles>
         <sport>Футбол</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -124,7 +124,7 @@
         <name>Медведев Дмитрий Егорович</name>
         <cast>Запасной</cast>
         <position>2</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Биатлон</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -132,7 +132,7 @@
         <name>Балашов Никита Даниилович</name>
         <cast>Основной</cast>
         <position>50</position>
-        <title>5</title>
+        <titles>5</titles>
         <sport>Вольная борьба</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -140,7 +140,7 @@
         <name>Иванов Александр Саввич</name>
         <cast>N/A</cast>
         <position>90</position>
-        <title>15</title>
+        <titles>15</titles>
         <sport>Хоккей</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -148,7 +148,7 @@
         <name>Николаев Захар Богданович</name>
         <cast>Запасной</cast>
         <position>89</position>
-        <title>14</title>
+        <titles>14</titles>
         <sport>Гимнастика</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -156,7 +156,7 @@
         <name>Никитина Дарья Владимировна</name>
         <cast>Запасной</cast>
         <position>39</position>
-        <title>15</title>
+        <titles>15</titles>
         <sport>Вольная борьба</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -164,7 +164,7 @@
         <name>Ежова Эвелина Данииловна</name>
         <cast>N/A</cast>
         <position>57</position>
-        <title>20</title>
+        <titles>20</titles>
         <sport>Вольная борьба</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -172,7 +172,7 @@
         <name>Харитонова Ксения Михайловна</name>
         <cast>Запасной</cast>
         <position>88</position>
-        <title>20</title>
+        <titles>20</titles>
         <sport>Велоспорт</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -180,7 +180,7 @@
         <name>Дубинин Максим Ибрагимович</name>
         <cast>N/A</cast>
         <position>54</position>
-        <title>1</title>
+        <titles>1</titles>
         <sport>Покер</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -188,7 +188,7 @@
         <name>Марков Георгий Тимурович</name>
         <cast>Основной</cast>
         <position>100</position>
-        <title>0</title>
+        <titles>0</titles>
         <sport>Футбол</sport>
         <rank>Кмс</rank>
     </row>
@@ -196,7 +196,7 @@
         <name>Овчинников Тимофей Арсентьевич</name>
         <cast>Основной</cast>
         <position>45</position>
-        <title>2</title>
+        <titles>2</titles>
         <sport>Бокс</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -204,7 +204,7 @@
         <name>Куликов Фёдор Сергеевич</name>
         <cast>Основной</cast>
         <position>36</position>
-        <title>7</title>
+        <titles>7</titles>
         <sport>Биатлон</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -212,7 +212,7 @@
         <name>Борисов Герман Михайлович</name>
         <cast>Запасной</cast>
         <position>41</position>
-        <title>7</title>
+        <titles>7</titles>
         <sport>Бокс</sport>
         <rank>Кмс</rank>
     </row>
@@ -220,7 +220,7 @@
         <name>Ефимова Валерия Артёмовна</name>
         <cast>Запасной</cast>
         <position>18</position>
-        <title>1</title>
+        <titles>1</titles>
         <sport>Хоккей</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -228,7 +228,7 @@
         <name>Родионова Александра Ярославовна</name>
         <cast>Основной</cast>
         <position>7</position>
-        <title>9</title>
+        <titles>9</titles>
         <sport>Биатлон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -236,7 +236,7 @@
         <name>Рожкова Василиса Романовна</name>
         <cast>Запасной</cast>
         <position>43</position>
-        <title>3</title>
+        <titles>3</titles>
         <sport>Гимнастика</sport>
         <rank>Кмс</rank>
     </row>
@@ -244,7 +244,7 @@
         <name>Агапов Константин Родионович</name>
         <cast>N/A</cast>
         <position>94</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Вольная борьба</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -252,7 +252,7 @@
         <name>Кузнецов Александр Владиславович</name>
         <cast>Основной</cast>
         <position>74</position>
-        <title>17</title>
+        <titles>17</titles>
         <sport>Биатлон</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -260,7 +260,7 @@
         <name>Смирнов Владимир Васильевич</name>
         <cast>N/A</cast>
         <position>88</position>
-        <title>2</title>
+        <titles>2</titles>
         <sport>Бокс</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -268,7 +268,7 @@
         <name>Денисова Милана Робертовна</name>
         <cast>Запасной</cast>
         <position>46</position>
-        <title>16</title>
+        <titles>16</titles>
         <sport>Хоккей</sport>
         <rank>Кмс</rank>
     </row>
@@ -276,7 +276,7 @@
         <name>Шилова Мария Артуровна</name>
         <cast>Основной</cast>
         <position>8</position>
-        <title>8</title>
+        <titles>8</titles>
         <sport>Биатлон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -284,7 +284,7 @@
         <name>Ковалев Даниил Никитич</name>
         <cast>Основной</cast>
         <position>29</position>
-        <title>3</title>
+        <titles>3</titles>
         <sport>Вольная борьба</sport>
         <rank>Кмс</rank>
     </row>
@@ -292,7 +292,7 @@
         <name>Прохорова Сафия Глебовна</name>
         <cast>Основной</cast>
         <position>68</position>
-        <title>3</title>
+        <titles>3</titles>
         <sport>Шахматы</sport>
         <rank>3-й разряд</rank>
     </row>
@@ -300,7 +300,7 @@
         <name>Баранова Айлин Всеволодовна</name>
         <cast>N/A</cast>
         <position>63</position>
-        <title>16</title>
+        <titles>16</titles>
         <sport>Гимнастика</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -308,7 +308,7 @@
         <name>Васильева Стефания Адамовна</name>
         <cast>Запасной</cast>
         <position>65</position>
-        <title>18</title>
+        <titles>18</titles>
         <sport>Покер</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -316,7 +316,7 @@
         <name>Прокофьев Марк Тимофеевич</name>
         <cast>Основной</cast>
         <position>57</position>
-        <title>19</title>
+        <titles>19</titles>
         <sport>Гимнастика</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -324,7 +324,7 @@
         <name>Жуков Иван Артёмович</name>
         <cast>Запасной</cast>
         <position>18</position>
-        <title>19</title>
+        <titles>19</titles>
         <sport>Бадминтон</sport>
         <rank>Кмс</rank>
     </row>
@@ -332,7 +332,7 @@
         <name>Болдырева София Максимовна</name>
         <cast>Основной</cast>
         <position>7</position>
-        <title>10</title>
+        <titles>10</titles>
         <sport>Хоккей</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -340,7 +340,7 @@
         <name>Серова Анастасия Игоревна</name>
         <cast>Основной</cast>
         <position>85</position>
-        <title>16</title>
+        <titles>16</titles>
         <sport>Велоспорт</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -348,7 +348,7 @@
         <name>Шестаков Никита Максимович</name>
         <cast>Основной</cast>
         <position>88</position>
-        <title>2</title>
+        <titles>2</titles>
         <sport>Хоккей</sport>
         <rank>2-й разряд</rank>
     </row>
@@ -356,7 +356,7 @@
         <name>Трофимова Вероника Ивановна</name>
         <cast>Основной</cast>
         <position>60</position>
-        <title>0</title>
+        <titles>0</titles>
         <sport>Бокс</sport>
         <rank>Мастер спорта</rank>
     </row>
@@ -364,7 +364,7 @@
         <name>Карпова Милана Ивановна</name>
         <cast>Основной</cast>
         <position>59</position>
-        <title>19</title>
+        <titles>19</titles>
         <sport>Шахматы</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -372,7 +372,7 @@
         <name>Максимов Георгий Рустамович</name>
         <cast>Основной</cast>
         <position>62</position>
-        <title>0</title>
+        <titles>0</titles>
         <sport>Покер</sport>
         <rank>Кмс</rank>
     </row>
@@ -380,7 +380,7 @@
         <name>Попова Александра Сергеевна</name>
         <cast>Основной</cast>
         <position>35</position>
-        <title>20</title>
+        <titles>20</titles>
         <sport>Велоспорт</sport>
         <rank>Кмс</rank>
     </row>
@@ -388,7 +388,7 @@
         <name>Кириллова Василиса Платоновна</name>
         <cast>Запасной</cast>
         <position>63</position>
-        <title>17</title>
+        <titles>17</titles>
         <sport>Биатлон</sport>
         <rank>1-й юношеский</rank>
     </row>
@@ -396,7 +396,7 @@
         <name>Van Darkholm</name>
         <cast>Основной</cast>
         <position>69</position>
-        <title>Performance Artist</title>
+        <titles>Performance Artist</titles>
         <sport>...</sport>
         <rank>2-й разряд</rank>
     </row>
