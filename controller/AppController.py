@@ -33,7 +33,7 @@ class AppController:
         dialog = NameAndSportSearchResults(data)
         dialog.open()
 
-    def searchByNameOrSportDialogue(self) -> None:
+    def searchByNameOrSport(self) -> None:
             self.dialog = NameAndSportSearchDialogue()
             self.dialog.open()
 

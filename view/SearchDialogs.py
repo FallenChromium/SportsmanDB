@@ -74,7 +74,7 @@ class NameAndSportSearchDialogue(SearchDialog):
     def openResults(self, *args):
         fullname = self.content_cls.ids.fullname.text
         sport = self.content_cls.ids.sport.text
-        MDApp.get_running_app().controller.searchByNameOrSport(fullname,sport)
+        MDApp.get_running_app().controller.searchByNameOrSportResults(fullname,sport)
 
     def __init__(self):
         super().__init__(NameAndSportInput())
