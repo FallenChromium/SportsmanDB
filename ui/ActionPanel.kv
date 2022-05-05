@@ -1,16 +1,17 @@
-<ActionPanel@BoxLayout>:
+<ActionPanel@StackLayout>:
     MDFlatButton:
         text:"Open"
-        on_press: root.openDialog()
+        on_press: root.openFileDialog()
     MDFlatButton:
         text:"Save"
-        on_press: root.save()
-    MDFlatButton:
-        text:"Search"
-        on_press: root.searchDialog()
-    MDFlatButton:
-        text:"Delete"
-        on_press: root.deleteDialog()
+        on_press: root.saveFileDialog()
     MDFlatButton:
         text: "Add record"
         on_press: root.addRecordDialog()
+    MDFlatButton:
+        text: "Search"
+        id: search_caller
+        on_press: root.searchDialog()
+    MDFlatButton:
+        text: "Delete"
+        on_press: root.deleteDialog()
