@@ -2,7 +2,7 @@ from model.Sportsman import Sportsman
 from model.WriterParser import writeXML
 from model.ReaderParser import parseXML
 
-class DB:
+class DataStore:
     def __init__(self):
         self.__data: list[Sportsman] = list()
 
@@ -62,6 +62,6 @@ class DB:
 
 
 if __name__ == "__main__":
-    data = DB()
+    data = DataStore()
     data.load("../examples/db.xml")
     data.save("../examples/db_export.xml")

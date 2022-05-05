@@ -1,13 +1,17 @@
 from typing import Any
 from model.Sportsman import Sportsman
-from model.db import DB 
-from kivy.app import App
+from model.datastore import DataStore 
+from kivymd.app import MDApp
+
+from view.SearchDialogs import NameAndSportSearchDialogue, NameAndSportSearchResults
 
 class AppController:
     def __init__(self):
-        self.data = DB()
+        self.data = DataStore()
         self.filename = ""
+        self.dialog = None
 
+    # Action Panel functions
     def openFile(self, filename: str):
         self.filename = filename
         self.data.load(self.filename)
@@ -24,18 +28,20 @@ class AppController:
         except ValueError:
             pass
 
-    def updateTable(self):
-        app = App.get_running_app()
-        app.root.updateTable()
+    def searchByNameOrSportResults(self, name: str, sport: str) -> None:
+        data = self.data.searchByNameOrSport(name, sport)
+        dialog = NameAndSportSearchResults(data)
+        dialog.open()
 
-    def searchByNameOrSport(self, name: str, sport: str) -> list:
-        return self.data.searchByNameOrSport(name, sport)
+    def searchByNameOrSportDialogue(self) -> None:
+            self.dialog = NameAndSportSearchDialogue()
+            self.dialog.open()
 
-    def searchByNameOrRank(self, name: str, rank: str) -> list:
-        return self.data.searchByNameOrRank(name, rank)
+    def searchByNameOrRank(self) -> None:
+        pass 
 
-    def searchByTitles(self, min: int, max: int) -> list:
-        return self.data.searchByTitles(min, max)
+    def searchByTitles(self) -> None:
+        pass
 
     def deleteByNameOrSport(self, name: str, sport: str) -> int:
         return self.data.deleteByNameOrSport(name, sport)
@@ -45,6 +51,9 @@ class AppController:
 
     def deleteByTitles(self, min: int, max: int) -> int:
         return self.data.deleteByTitles(min, max)
+
+    def updateTable(self):
+        MDApp.get_running_app().root.updateTable()
 
     def getData(self):
         return self.data.getData()
