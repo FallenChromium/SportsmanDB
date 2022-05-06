@@ -1,6 +1,7 @@
 from model.Sportsman import Sportsman
 from model.WriterParser import writeXML
 from model.ReaderParser import parseXML
+from model.constants import ranks
 
 class DataStore:
     def __init__(self):
@@ -59,6 +60,12 @@ class DataStore:
         for element in delete:
             self.__data.remove(element)
         return result
+    
+    def sportsList(self) -> list[str]:
+        return list(set([sportsman.sport for sportsman in self.__data]))
+
+    def ranksList(self) -> list[str]:
+        return ranks
 
 
 if __name__ == "__main__":

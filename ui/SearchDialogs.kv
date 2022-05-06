@@ -13,6 +13,7 @@
     MDTextField:
         hint_text: "Sport Type"
         id: sport
+        on_focus: if self.focus: root.sport_dropdown.open()
 
 <NameAndRankInput>
     MDTextField:
@@ -22,6 +23,8 @@
     MDTextField:
         hint_text: "Rank"
         id: rank
+        on_focus: if self.focus: root.rank_dropdown.open()
+
 
 <TitlesAmountInput>
     MDTextField:

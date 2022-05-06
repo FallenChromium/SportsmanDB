@@ -64,6 +64,11 @@ class AppController:
     def deleteByTitles(self, min: int, max: int) -> int:
         return self.data.deleteByTitles(min, max)
 
+    def getSportsList(self) -> list[str]:
+        return self.data.sportsList()
+
+    def getRanksList(self) -> list[str]:
+        return self.data.ranksList()
 
     def updateTable(self):
         MDApp.get_running_app().root.updateTable()
