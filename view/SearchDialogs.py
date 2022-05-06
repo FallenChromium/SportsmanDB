@@ -1,3 +1,4 @@
+import abc
 from kivy.lang import Builder
 from kivy.metrics import dp
 from kivymd.uix.boxlayout import MDBoxLayout
@@ -5,24 +6,25 @@ from kivymd.uix.dialog import MDDialog
 from kivymd.uix.button import MDFlatButton
 from kivymd.uix.datatables import MDDataTable
 from view.constants import table_fields
+
 from kivymd.app import MDApp
 
 
 class SearchDialog(MDDialog):
+    __metaclass__ = abc.ABCMeta
+
+    @abc.abstractmethod
+    def openResults(self, *args):
+        pass
+
     def __init__(self, content):
         super().__init__(
             title="Search:",
             type="custom",            
             content_cls=content,
             buttons=[
-                MDFlatButton(
-                    text="CANCEL",
-                    on_press=self.dismiss
-                ),
-                MDFlatButton(
-                    text="OK",
-                    on_press=self.openResults,
-                ),
+                MDFlatButton(text="CANCEL", on_press=self.dismiss),
+                MDFlatButton(text="OK",on_press=self.openResults),
             ],
         )
 
@@ -34,6 +36,7 @@ class ResultsTable(MDBoxLayout):
         super().__init__()
         table = MDDataTable(size_hint=(1, 0.95),
                 column_data=[(x, dp(30)) for x in table_fields],
+                use_pagination=True,
                 row_data=[(idx, record.name, record.cast, record.position, record.titles, record.sport, record.rank) for idx, record in enumerate(data)])
         self.add_widget(table)
 
@@ -62,13 +65,8 @@ class NameAndSportInput(SearchInput):
 class NameAndRankInput(SearchInput):
     pass
 
-class TitlesInput(SearchInput):
+class TitlesAmountInput(SearchInput):
     pass
-
-
-class NameAndSportSearchResults(ResultsDialog):
-    def __init__(self, table_data: list):
-        super().__init__(table_data)
 
 class NameAndSportSearchDialogue(SearchDialog):
     def openResults(self, *args):
@@ -78,8 +76,24 @@ class NameAndSportSearchDialogue(SearchDialog):
 
     def __init__(self):
         super().__init__(NameAndSportInput())
+
+class NameAndRankSearchDialogue(SearchDialog):
+    def openResults(self, *args):
+        fullname = self.content_cls.ids.fullname.text
+        rank = self.content_cls.ids.rank.text
+        MDApp.get_running_app().controller.searchByNameOrRankResults(fullname,rank)
+
+    def __init__(self):
+        super().__init__(NameAndRankInput())
         
-        
+class TitlesAmountSearchDialogue(SearchDialog):
+    def openResults(self, *args):
+        min = int(self.content_cls.ids.min_titles.text)
+        max = int(self.content_cls.ids.max_titles.text)
+        MDApp.get_running_app().controller.searchByTitlesResults(min,max)
+
+    def __init__(self):
+        super().__init__(TitlesAmountInput()) 
     
 Builder.load_file("ui/SearchDialogs.kv")
 Builder.load_file("ui/ResultsDialogs.kv")

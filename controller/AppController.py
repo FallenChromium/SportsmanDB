@@ -1,9 +1,10 @@
 from typing import Any
 from model.Sportsman import Sportsman
-from model.datastore import DataStore 
+from model.datastore import DataStore
 from kivymd.app import MDApp
 
-from view.SearchDialogs import NameAndSportSearchDialogue, NameAndSportSearchResults
+from view.SearchDialogs import NameAndRankSearchDialogue, NameAndSportSearchDialogue, ResultsDialog, TitlesAmountSearchDialogue
+
 
 class AppController:
     def __init__(self):
@@ -18,8 +19,8 @@ class AppController:
         self.updateTable()
 
     def saveFile(self, path: str):
-        #If we don't have any data, why even bother? I'll leave the save of empty files just in case
-        #if len(self.getData()) == 0: return
+        # If we don't have any data, why even bother? I'll leave the save of empty files just in case
+        # if len(self.getData()) == 0: return
         self.data.save(path)
 
     def addRecord(self, record: dict[str, Any]):
@@ -30,18 +31,29 @@ class AppController:
 
     def searchByNameOrSportResults(self, name: str, sport: str) -> None:
         data = self.data.searchByNameOrSport(name, sport)
-        dialog = NameAndSportSearchResults(data)
-        dialog.open()
+        ResultsDialog(data).open()
+
+    def searchByNameOrRankResults(self, name: str, rank: str) -> None:
+        data = self.data.searchByNameOrRank(name, rank)
+        ResultsDialog(data).open()
+
+    def searchByTitlesResults(self, min: int, max: int) -> None:
+        data = self.data.searchByTitles(min, max)
+        ResultsDialog(data).open()
+
 
     def searchByNameOrSport(self) -> None:
-            self.dialog = NameAndSportSearchDialogue()
-            self.dialog.open()
+        self.dialog = NameAndSportSearchDialogue()
+        self.dialog.open()
 
     def searchByNameOrRank(self) -> None:
-        pass 
+        self.dialog = NameAndRankSearchDialogue()
+        self.dialog.open()
 
     def searchByTitles(self) -> None:
-        pass
+        self.dialog = TitlesAmountSearchDialogue()
+        self.dialog.open()
+
 
     def deleteByNameOrSport(self, name: str, sport: str) -> int:
         return self.data.deleteByNameOrSport(name, sport)
@@ -51,6 +63,7 @@ class AppController:
 
     def deleteByTitles(self, min: int, max: int) -> int:
         return self.data.deleteByTitles(min, max)
+
 
     def updateTable(self):
         MDApp.get_running_app().root.updateTable()
