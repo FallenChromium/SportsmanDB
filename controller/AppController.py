@@ -30,14 +30,17 @@ class AppController:
             pass
 
     def searchByNameOrSportResults(self, name: str, sport: str) -> None:
+        self.dialog.dismiss()
         data = self.data.searchByNameOrSport(name, sport)
         ResultsDialog(data).open()
 
     def searchByNameOrRankResults(self, name: str, rank: str) -> None:
+        self.dialog.dismiss()
         data = self.data.searchByNameOrRank(name, rank)
         ResultsDialog(data).open()
 
     def searchByTitlesResults(self, min: int, max: int) -> None:
+        self.dialog.dismiss()
         data = self.data.searchByTitles(min, max)
         ResultsDialog(data).open()
 

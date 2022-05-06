@@ -1,10 +1,24 @@
 from plyer import filechooser
+from kivy.properties import ObjectProperty
 from kivymd.uix.stacklayout import StackLayout
 from kivymd.uix.menu import MDDropdownMenu
 from model.constants import options
 from kivymd.app import MDApp
 
 class ActionPanel(StackLayout):
+    search_dropdown = ObjectProperty(None)
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        #search dropdown init
+        caller = self.ids.search_caller
+        items = [
+            {"viewclass": "BaseListItem", 
+            "text": value,
+            "on_press": lambda x=key: self.searchDialogCallback(x) 
+            }
+            for key, value in options.items()
+            ]
+        self.search_dropdown = MDDropdownMenu(caller=caller, items=items, width_mult=4)   
 
     def openFileDialog(self):
         # Kivy file dialog sucks a ton - I want to open a native one instead :)
@@ -24,14 +38,8 @@ class ActionPanel(StackLayout):
             else: 
                 pass
 
-    def searchDialog(self):
-        caller = self.ids.search_caller
-        items = [
-            {"viewclass": "BaseListItem", 
-             "text": value,
-             "on_press": getattr(MDApp.get_running_app().controller, key) 
-             }
-             for key, value in options.items()
-            ]
-        self.parent.dropdown = MDDropdownMenu(caller=caller, items=items, width_mult=4)
-        self.parent.dropdown.open()
+    def searchDialogCallback(self, key):
+        self.search_dropdown.dismiss()
+        getattr(MDApp.get_running_app().controller, key)()
+        
+        
