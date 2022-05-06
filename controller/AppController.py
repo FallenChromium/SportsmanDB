@@ -2,6 +2,7 @@ from typing import Any
 from model.Sportsman import Sportsman
 from model.datastore import DataStore
 from kivymd.app import MDApp
+from view.DeleteDialogs import NameAndRankDeleteDialogue, NameAndSportDeleteDialogue, TitlesAmountDeleteDialogue, DeletionReportDialog
 
 from view.SearchDialogs import NameAndRankSearchDialogue, NameAndSportSearchDialogue, ResultsDialog, TitlesAmountSearchDialogue
 
@@ -57,15 +58,32 @@ class AppController:
         self.dialog = TitlesAmountSearchDialogue()
         self.dialog.open()
 
+    def deleteByNameOrSport(self) -> None:
+        self.dialog = NameAndSportDeleteDialogue()
+        self.dialog.open()
 
-    def deleteByNameOrSport(self, name: str, sport: str) -> int:
-        return self.data.deleteByNameOrSport(name, sport)
+    def deleteByNameOrRank(self) -> None:
+        self.dialog = NameAndRankDeleteDialogue()
+        self.dialog.open()
 
-    def deleteByNameOrRank(self, name: str, rank: str) -> int:
-        return self.data.deleteByNameOrRank(name, rank)
+    def deleteByTitles(self) -> None:
+        self.dialog = TitlesAmountDeleteDialogue()
+        self.dialog.open()
 
-    def deleteByTitles(self, min: int, max: int) -> int:
-        return self.data.deleteByTitles(min, max)
+    def deleteByNameOrSportResults(self, name: str, sport: str) -> None:
+        self.dialog.dismiss()
+        DeletionReportDialog(self.data.deleteByNameOrSport(name, sport)).open()
+        self.updateTable()
+
+    def deleteByNameOrRankResults(self, name: str, rank: str) -> None:
+        self.dialog.dismiss()
+        DeletionReportDialog(self.data.deleteByNameOrRank(name, rank)).open()
+        self.updateTable()
+
+    def deleteByTitlesResults(self, min: int, max: int) -> None:
+        self.dialog.dismiss()
+        DeletionReportDialog(self.data.deleteByTitles(min, max)).open()
+        self.updateTable()
 
     def getSportsList(self) -> list[str]:
         return self.data.sportsList()

@@ -2,23 +2,35 @@ from plyer import filechooser
 from kivy.properties import ObjectProperty
 from kivymd.uix.stacklayout import StackLayout
 from kivymd.uix.menu import MDDropdownMenu
-from model.constants import options
+from view.constants import search_options, delete_options
 from kivymd.app import MDApp
 
 class ActionPanel(StackLayout):
     search_dropdown = ObjectProperty(None)
+    delete_dropdown = ObjectProperty(None)
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
         #search dropdown init
-        caller = self.ids.search_caller
-        items = [
+        search_items = [
             {"viewclass": "BaseListItem", 
             "text": value,
             "on_press": lambda x=key: self.searchDialogCallback(x) 
             }
-            for key, value in options.items()
-            ]
-        self.search_dropdown = MDDropdownMenu(caller=caller, items=items, width_mult=4)   
+            for key, value in search_options.items()
+        ]
+        self.search_dropdown = MDDropdownMenu(caller=self.ids.search_caller, items=search_items, width_mult=4) 
+
+        #delete dropdown init
+        delete_items = [
+            {"viewclass": "BaseListItem", 
+            "text": value,
+            "on_press": lambda x=key: self.deleteDialogCallback(x) 
+            }
+            for key, value in delete_options.items()
+        ]
+        self.delete_dropdown = MDDropdownMenu(caller=self.ids.delete_caller, items=delete_items, width_mult=4)   
+ 
 
     def openFileDialog(self):
         # Kivy file dialog sucks a ton - I want to open a native one instead :)
@@ -40,6 +52,10 @@ class ActionPanel(StackLayout):
 
     def searchDialogCallback(self, key):
         self.search_dropdown.dismiss()
+        getattr(MDApp.get_running_app().controller, key)()
+    
+    def deleteDialogCallback(self, key):
+        self.delete_dropdown.dismiss()
         getattr(MDApp.get_running_app().controller, key)()
         
         
