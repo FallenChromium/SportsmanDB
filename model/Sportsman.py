@@ -6,7 +6,7 @@ class Sportsman:
         self.name = name
         self.cast = cast
         self.position = int(position)
-        self.titles = titles
+        self.titles = int(titles)
         self.sport = sport
         self.rank = rank
 
