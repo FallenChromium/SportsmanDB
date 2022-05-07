@@ -1,11 +1,11 @@
 table_fields = [
     "No.",
-    "Имя",
-    "cast",
-    "Позиция",
-    "Титулов",
-    "Вид спорта",
-    "Разряд"
+    "Name",
+    "Cast",
+    "Position",
+    "Titles",
+    "Sport",
+    "Rank"
 ]
 
 search_options = {"searchByNameOrSport": "По имени и виду спорта",
