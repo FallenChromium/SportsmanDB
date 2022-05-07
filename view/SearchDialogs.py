@@ -37,7 +37,7 @@ class ResultsTable(MDBoxLayout):
         table = MDDataTable(size_hint=(1, 0.95),
                 column_data=[(x, dp(30)) for x in table_fields],
                 use_pagination=True,
-                row_data=[(idx, record.name, record.cast, record.position, record.titles, record.sport, record.rank) for idx, record in enumerate(data)])
+                row_data=[(idx, record.name, record.cast, record.position, record.titles, record.sport, record.rank) for idx, record in enumerate(data, start=1)])
         self.add_widget(table)
 
 
