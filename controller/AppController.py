@@ -5,8 +5,8 @@ from model.constants import IncorrectFileException
 from kivymd.app import MDApp
 from view.DeleteDialogs import NameAndRankDeleteDialogue, NameAndSportDeleteDialogue, TitlesAmountDeleteDialogue, DeletionReportDialog
 from view.InsertDialog import InsertDialog, InsertErrorDialog
-
 from view.SearchDialogs import NameAndRankSearchDialogue, NameAndSportSearchDialogue, ResultsDialog, TitlesAmountSearchDialogue
+from view.ActionPanel import IncorrectFileDialog
 
 
 class AppController:
@@ -18,8 +18,11 @@ class AppController:
     # Action Panel functions
     def openFile(self, filename: str):
         self.filename = filename
-        self.data.load(self.filename)
-        self.updateTable()
+        try:
+            self.data.load(self.filename)
+            self.updateTable()
+        except:
+            IncorrectFileDialog().open()
 
     def saveFile(self, path: str):
         # If we don't have any data, why even bother? I'll leave the save of empty files just in case

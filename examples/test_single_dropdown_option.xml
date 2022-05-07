@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <row>
+        <name>Зайцев Вадим Романович</name>
+        <cast>N/A</cast>
+        <position>19</position>
+        <titles>12</titles>
+        <sport>Вольная борьба</sport>
+        <rank>1-й юношеский</rank>
+    </row>
+    <row>
+        <name>Карпов Богдан Владимирович</name>
+        <cast>Запасной</cast>
+        <position>71</position>
+        <titles>8</titles>
+        <sport>Вольная борьба</sport>
+        <rank>Мастер спорта</rank>
+    </row>
+    <row>
+        <name>Смирнов Фёдор Романович</name>
+        <cast>Запасной</cast>
+        <position>37</position>
+        <titles>10</titles>
+        <sport>Вольная борьба</sport>
+        <rank>1-й юношеский</rank>
+    </row>
+    <row>
+        <name>Алексеева Аделина Вадимовна</name>
+        <cast>Основной</cast>
+        <position>72</position>
+        <titles>18</titles>
+        <sport>Вольная борьба</sport>
+        <rank>1-й юношеский</rank>
+    </row>
+    <row>
+        <name>Боброва Надежда Максимовна</name>
+        <cast>Основной</cast>
+        <position>6</position>
+        <titles>15</titles>
+        <sport>Вольная борьба</sport>
+        <rank>Кмс</rank>
+    </row>
+    <row>
+        <name>Беляева Алиса Мироновна</name>
+        <cast>Основной</cast>
+        <position>66</position>
+        <titles>1</titles>
+        <sport>Вольная борьба</sport>
+        <rank>3-й разряд</rank>
+    </row>
+    <row>
+        <name>Осипова Полина Макаровна</name>
+        <cast>N/A</cast>
+        <position>10</position>
+        <titles>8</titles>
+        <sport>Вольная борьба</sport>
+        <rank>3-й разряд</rank>
+    </row>
+    <row>
+        <name>Казаков Иван Никитич</name>
+        <cast>N/A</cast>
+        <position>80</position>
+        <titles>8</titles>
+        <sport>Вольная борьба</sport>
+        <rank>Кмс</rank>
+    </row>
+    <row>
+        <name>Белкин Михаил Ярославович</name>
+        <cast>N/A</cast>
+        <position>71</position>
+        <titles>0</titles>
+        <sport>Вольная борьба</sport>
+        <rank>1-й юношеский</rank>
+    </row>
+    <row>
+        <name>Николаев Марк Юрьевич</name>
+        <cast>Основной</cast>
+        <position>1</position>
+        <titles>11</titles>
+        <sport>Вольная борьба</sport>
+        <rank>Кмс</rank>
+    </row>
+    <row>
+        <name>Зверев Тимофей Ярославович</name>
+        <cast>N/A</cast>
+        <position>37</position>
+        <titles>5</titles>
+        <sport>Вольная борьба</sport>
+        <rank>Мастер спорта</rank>
+    </row>
+    <row>
+        <name>Фролова Ксения Гордеевна</name>
+        <cast>Основной</cast>
+        <position>76</position>
+        <titles>16</titles>
+        <sport>Вольная борьба</sport>
+        <rank>1-й юношеский</rank>
+    </row>
+    <row>
+        <name>Фролов Владислав Александрович</name>
+        <cast>N/A</cast>
+        <position>28</position>
+        <titles>16</titles>
+        <sport>Вольная борьба</sport>
+        <rank>3-й разряд</rank>
+    </row>
+</table>

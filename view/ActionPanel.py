@@ -2,8 +2,25 @@ from plyer import filechooser
 from kivy.properties import ObjectProperty
 from kivymd.uix.stacklayout import StackLayout
 from kivymd.uix.menu import MDDropdownMenu
+from kivymd.uix.dialog import MDDialog
+from kivymd.uix.button import MDFlatButton
 from view.constants import search_options, delete_options
 from kivymd.app import MDApp
+
+class IncorrectFileDialog(MDDialog):
+    def __init__(self):
+        super().__init__(
+            title="Parsing error:",
+            text="Sorry, but the file you've opened has incorrect format. Please try opening another file.",
+            buttons=[
+                    MDFlatButton(
+                        text="CLOSE",
+                        theme_text_color="Custom",
+                        on_press=self.dismiss
+                    ),
+                ],
+        )
+
 
 class ActionPanel(StackLayout):
     search_dropdown = ObjectProperty(None)
