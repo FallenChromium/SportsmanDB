@@ -1,8 +1,10 @@
 from typing import Any
 from model.Sportsman import Sportsman
 from model.datastore import DataStore
+from model.constants import IncorrectFileException
 from kivymd.app import MDApp
 from view.DeleteDialogs import NameAndRankDeleteDialogue, NameAndSportDeleteDialogue, TitlesAmountDeleteDialogue, DeletionReportDialog
+from view.InsertDialog import InsertDialog, InsertErrorDialog
 
 from view.SearchDialogs import NameAndRankSearchDialogue, NameAndSportSearchDialogue, ResultsDialog, TitlesAmountSearchDialogue
 
@@ -24,11 +26,19 @@ class AppController:
         # if len(self.getData()) == 0: return
         self.data.save(path)
 
-    def addRecord(self, record: dict[str, Any]):
+    def addRecordResults(self, record: dict[str, Any]):
         try:
-            self.data.addRecord(Sportsman(**record))
-        except ValueError:
-            pass
+            object = Sportsman(**record)
+            index = self.data.addRecord(object)
+            MDApp.get_running_app().root.addRow(index, object)
+            self.dialog.dismiss()
+        except IncorrectFileException:
+            InsertErrorDialog().open()
+
+
+    def addRecord(self):
+        self.dialog = InsertDialog()
+        self.dialog.open() 
 
     def searchByNameOrSportResults(self, name: str, sport: str) -> None:
         self.dialog.dismiss()
@@ -90,6 +100,9 @@ class AppController:
 
     def getRanksList(self) -> list[str]:
         return self.data.ranksList()
+
+    def getCastsList(self) -> list[str]:
+        return self.data.castsList()
 
     def updateTable(self):
         MDApp.get_running_app().root.updateTable()

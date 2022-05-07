@@ -31,6 +31,10 @@ class ActionPanel(StackLayout):
         ]
         self.delete_dropdown = MDDropdownMenu(caller=self.ids.delete_caller, items=delete_items, width_mult=4)   
  
+    def addRecordDialog(self):
+        MDApp.get_running_app().controller.addRecord() 
+ 
+
 
     def openFileDialog(self):
         # Kivy file dialog sucks a ton - I want to open a native one instead :)

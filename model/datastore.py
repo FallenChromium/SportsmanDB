@@ -1,7 +1,7 @@
 from model.Sportsman import Sportsman
 from model.WriterParser import writeXML
 from model.ReaderParser import parseXML
-from model.constants import ranks
+from model.constants import ranks, casts
 
 class DataStore:
     def __init__(self):
@@ -16,8 +16,9 @@ class DataStore:
     def getData(self) -> list:
         return self.__data
 
-    def addRecord(self, record: Sportsman) -> None:
+    def addRecord(self, record: Sportsman) -> int:
         self.__data.append(record)
+        return len(self.__data)
 
     def searchByNameOrSport(self, name: str, sport: str) -> list:
         result: list = list()
@@ -66,6 +67,9 @@ class DataStore:
 
     def ranksList(self) -> list[str]:
         return ranks
+    
+    def castsList(self) -> list[str]:
+        return casts
 
 
 if __name__ == "__main__":

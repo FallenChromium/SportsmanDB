@@ -1,0 +1,32 @@
+<InsertInput>
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "480dp"
+
+    MDTextField:
+        hint_text: "Name"
+        id: fullname
+
+    MDTextField:
+        hint_text: "Cast"
+        id: cast
+        on_focus: if self.focus: root.cast_dropdown.open()
+
+    MDTextField:
+        hint_text: "Position"
+        id: position
+    MDTextField:
+        hint_text: "Titles"
+        id: titles
+
+    MDTextField:
+        hint_text: "Sport Type"
+        id: sport
+        on_focus: if self.focus: root.sport_dropdown.open()
+
+    MDTextField:
+        hint_text: "Rank"
+        id: rank
+        on_focus: if self.focus: root.rank_dropdown.open()
+
