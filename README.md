@@ -1,5 +1,5 @@
 
-## Requrements:
+## Requirements:
    - KivyMD is API unstable as of now, it's best to use either  the version I've used on my computer (`1.0.0.dev0`), or main branch. A lot of bugs are fixed in the `main`, so, unless something's broken, install from source, not from PyPI: `pip3 install https://github.com/kivymd/KivyMD/archive/master.zip`
    - I've used a native filepicker instead of Kivy's (because kivy's picker is horrible). `pip3 install plyer` is required for it to work
 ## Launch:
@@ -7,7 +7,7 @@
 
 ## What can be improved:
  - A separate type for sending records between controller and view
- - A more sophisticated error handling system, especially for XML parser (with SAX error handler). Seemed to increase the complexity of passing the error to the view a lot, so I've opted out for a generic error message, because I was near the deadline on the assignment... Eh.
+ - A more sophisticated error handling system, especially for XML parser (with SAX error handler). Seemed to increase the complexity of passing the error to the view a lot, so I've made a generic error message instead, because I was near the deadline on the assignment... Eh.
  - A better way to call the app's controller (`pyright`'s complaining right now)
  - Binding data from the model directly to the view (buggy on KivyMD, see below)
  - Fix the pagination (not my fault, see https://github.com/kivymd/KivyMD/issues/1242)
