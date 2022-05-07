@@ -7,10 +7,11 @@
 
 ## What can be improved:
  - A separate type for sending records between controller and view
+ - A more sophisticated error handling system, especially for XML parser (with SAX error handler). Seemed to increase the complexity of passing the error to the view a lot, so I've opted out for a generic error message, because I was near the deadline on the assignment... Eh.
  - A better way to call the app's controller (`pyright`'s complaining right now)
  - Binding data from the model directly to the view (buggy on KivyMD, see below)
  - Fix the pagination (not my fault, see https://github.com/kivymd/KivyMD/issues/1242)
- - More coherent UI: input field validators, correct sizes for the dropdown menu, action bar based on the MD guidelines, better default window size, accent colors. Honestly, I tried to create a beautiful GUI. Now I couldn't care less. By the time I've finished this project I was (and still am) hoping I won't touch Kivy or KivyMD ever again - here are some of the reasons why:
+ - More coherent UI: input field validators, correct sizes for the dropdown menu, action bar based on the MD guidelines, better default window size, accent colors. Honestly, I tried to create a beautiful GUI. Now I couldn't care less. By the time I've finished this project I was (and still am) hoping I won't touch Kivy or KivyMD **ever** again - here are some of the reasons why:
    - GUI is very slow (maybe OpenGL on macOS is to blame, but generally GUI is very unresponsive)
    - Lack of updated and/or full docs
    - incoherent UI elements, lack of some basic widget variations. Generally you have to write a lot of boilerplate, even for basic widgets (such as dropdown input)
